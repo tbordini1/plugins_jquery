@@ -1,0 +1,202 @@
+/* Configurações da página HTML */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    overflow-x: hidden; /* Evita a rolagem horizontal da página */
+}
+/* Fim das configurações da página HTML */
+
+body {
+    background-color: #ccc; 
+}
+
+
+/* Container geral */
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+}
+#carousel-imagens {
+    max-width: 100%; /* Garante que os slides não ultrapassem a largura máxima do contêiner pai */
+}
+
+.slick-list {
+    overflow: hidden; /* Esconde os slides que ultrapassam a área visível */
+}
+
+.slick-slide {
+    float: left; /* Alinha os slides horizontalmente */
+    width: 100%; /* Garante que cada slide ocupe toda a largura do contêiner pai */
+}
+
+
+/* Estilo do cabeçalho e rodapé */
+header, footer {
+    background-color: #090909; /* Cor de fundo */
+    padding-top: 16px; /* Espaçamento interno no topo */
+    color: #fff; /* Cor do texto */
+}
+
+/* Estilo do cabeçalho */
+header {
+    position: sticky; /* Mantém o cabeçalho fixo enquanto rola a página */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Garante que o cabeçalho fique sobre outros elementos */
+}
+
+header > .container,
+footer > .container {
+    justify-content: space-between; /* Distribui os elementos horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding-bottom: 16px; /* Espaçamento interno na parte inferior */
+}
+
+/* Configurações da barra de navegação */
+nav {
+    background-color: #333; /* Cor de fundo */
+    padding: 16px 0; /* Espaçamento interno */
+    display: none; /* Oculta por padrão em telas pequenas */
+}
+
+nav li {
+    list-style: none; /* Remove os marcadores de lista */
+    display: inline; /* Exibe os itens em linha */
+    margin-right: 16px; /* Espaçamento entre os itens */
+    font-size: 18px; /* Tamanho do texto */
+    font-weight: bold; /* Negrito */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+nav li a {
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+/* Fim das configurações da barra de navegação */
+
+/* Ícone do menu hamburguer */
+.menu-hamburguer {
+    width: 32px; /* Largura do ícone */
+    cursor: pointer; /* Cursor do mouse ao passar por cima */
+}
+
+.menu-hamburguer span {
+    height: 2px; /* Altura das barras */
+    width: 100%; /* Largura das barras */
+    background-color: #fff; /* Cor das barras */
+    display: block; /* Exibe como bloco */
+    margin-bottom: 4px; /* Espaçamento entre as barras */
+}
+
+/* Container flexível */
+.container-flex {
+    display: flex; /* Exibe como flexbox */
+    align-items: center;
+}
+
+/* Estilo da imagem na seção "Sobre a loja" */
+#sobre-a-loja img {
+    max-width: 350px; /* Largura máxima da imagem */
+    margin-right: 24px; /* Espaçamento à direita */
+}
+
+/* Estilos gerais das seções */
+section {
+    padding: 48px 0; /* Espaçamento interno */
+}
+
+section h2 {
+    margin-bottom: 16px; /* Espaçamento inferior do título */
+}
+
+/* Estilos da lista de veículos */
+.lista-veiculos {
+    flex-wrap: wrap; /* Quebra de linha automática */
+}
+
+.lista-veiculos li {
+    list-style: none; /* Remove os marcadores de lista */
+    max-width: 30%; /* Largura máxima dos itens */
+    margin-bottom: 24px; /* Espaçamento inferior */
+}
+
+.lista-veiculos li img {
+    max-width: 100%; /* Largura máxima da imagem */
+}
+
+.lista-veiculos li h3 {
+    margin: 16px 0; /* Espaçamento do título */
+}
+
+.item-central {
+    margin: 0 5%; /* Espaçamento lateral */
+}
+
+button {
+    display: block; /* Exibe como bloco */
+    width: 100%; /* Largura total */
+    padding: 8px 0; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    background-color:  #333; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    font-size: 16px; /* Tamanho do texto */
+    font-weight: bold; /* Negrito */
+    font-style: italic; /* Itálico */
+    cursor: pointer; /* Cursor do mouse */
+    border-radius: 6px; /* Borda arredondada */
+}
+
+.price {
+    margin: 16px 0; /* Espaçamento */
+    display: block; /* Exibe como bloco */
+}
+
+.price del {
+    color: #ccc; /* Cor do texto */
+    font-size: 14px; /* Tamanho do texto */
+}
+
+.form-campo {
+    margin-bottom: 16px; /* Espaçamento inferior */
+}
+
+.form-campo label {
+    font-weight: bold; /* Negrito */
+    display: block; /* Exibe como bloco */
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%; /* Largura total */
+    display: block; /* Exibe como bloco */
+    padding: 8px; /* Espaçamento interno */
+    
+}
+
+.form-campo textarea {
+    resize: none; /* Impede a redimensionamento */
+    height: 120px; /* Altura do campo de texto */
+}
+
+form {
+    max-width: 360px; /* Largura máxima do formulário */
+}
+
+form button {
+    max-width: 120px; /* Largura máxima do botão */
+}
+
+footer li {
+    list-style: none; /* Remove os marcadores de lista */
+    margin-left: 16px; /* Espaçamento à esquerda */
+}
+
+footer li img {
+    height: 32px; /* Altura da imagem */
+}
